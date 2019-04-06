@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+	
+<head>
+
+	<title></title>
+	
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Doctores</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link href="/styles/site.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css" type="text/css" />
+		<link rel="stylesheet" href="slick/slick.css" type="text/css" />
+		<link rel="stylesheet" href="slick/slick-theme.css" type="text/css" />
+		<link rel="stylesheet" href="css/animate.css" type="text/css" />
+		<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/fonts/Oswald-Regula.otf" />
+
+		<link rel="stylesheet" type="text/css" href="/style-v=2.css" />
+
+
+</head>
+	
+	<div class="section padding">
+
+		{{#if doctores}}
+		{{#each doctores}}
+		<div class="noticias">
+			<img class="selaneas top" src="/imgs/estrellas2.svg"><br>
+			<h3 class="clr_main" style="border: 0; color: #ff8925;">
+			<h2 class="clr_main">{{data.doctores.title}}</h2>
+			<div class="fila"> <hr style="border-bottom: 6px solid #002d65;" /> </div>
+			
+
+		<div class="doctores">
+			{{#if data.doctores.image}}<img src="{{{cloudinaryUrl data.doctores.image width=750 height=450 crop='fit' }}}" class="img-responsive">{{/if}}
+			{{{data.doctores.content.extended}}}
+		</div>
+
+
+			{{/each}}
+		{{/if}}
+			
+			
+		</div>
+
+	</div>
+	
+	

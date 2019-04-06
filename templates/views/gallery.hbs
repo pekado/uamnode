@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>centromedico</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link href="/styles/site.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css" type="text/css" />
+		<link rel="stylesheet" href="slick/slick.css" type="text/css" />
+		<link rel="stylesheet" href="slick/slick-theme.css" type="text/css" />
+		<link rel="stylesheet" href="css/animate.css" type="text/css" />
+		<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+
+		<link rel="stylesheet" type="text/css" href="/style-v=2.css" />
+
+<div class="container">
+	<h1>Gallery</h1>
+</div>
+<div class="container">
+	<!-- if galleries -->
+	
+		
+		<h2>{{data.image.slick}}
+			<div class="pull-right text-muted">19th May 2014</div>
+		</h2>
+		<div class="row gallery-images">
+				{{#if heroImage}}
+				<div class="col-sm-4 col-md-4 gallery-image">
+					<img src="{{cloudinaryUrl heroImage width='680' height='680'}}" class="img-rounded">
+				</div>
+				{{/if}}
+				<div class="col-sm-8 col-md-8">
+					<div class="row">
+						{{#each images}}
+						<div class="col-xs-4 col-sm-4 col-md-3 gallery-image">
+							<img src="{{cloudinaryUrl width='300' height='300'}}" class="img-rounded">
+						</div>
+						{{/each}}
+					</div>
+				</div>
+		</div>
+		
+	
+</div>

@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE  html>
+<html lang="es">
+	
+<head>
+
+	<title></title>
+	
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="/public/site.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css" type="text/css" />
+		<link rel="stylesheet" href="slick/slick.css" type="text/css" />
+		<link rel="stylesheet" href="slick/slick-theme.css" type="text/css" />
+		<link rel="stylesheet" href="css/animate.css" type="text/css" />
+		<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/fonts/Oswald-Regula.otf" />
+
+		<link rel="stylesheet" type="text/css" href="/style-v=2.css" />
+
+
+</head>
+<body>	
+	<div class="section padding">
+
+
+		<div class="noticias">
+			<img class="selaneas top" src="/imgs/estrellas2.svg"><br>
+			<h2 class="clr_main">{{data.doctores.title}}</h2>
+			<div class="fila"> <hr style="border-bottom: 6px solid #002d65;" /> </div>
+			
+
+		<div class="post">
+			{{#if data.post.image}}<img src="{{{cloudinaryUrl data.doctores.image width=750 height=450 crop='fit' }}}" class="img-responsive">{{/if}}
+			{{{data.doctores.content.extended}}}
+		</div>
+
+
+			<div class="sig-anterior">
+				<a href=""><img class="boton" src="/imgs/botanterior.svg"></a>
+				
+				<a href=""><img class="boton" src="/imgs/botsiguiente.svg"></a>
+			</div>
+			{{>pagination}}
+
+			
+			
+		</div>
+
+	</div>
+	
+	
+</body>

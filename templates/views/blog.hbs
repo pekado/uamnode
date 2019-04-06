@@ -1,0 +1,49 @@
+
+ <head>
+
+	
+	
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>centromedico</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link href="/styles/site.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css" type="text/css" />
+		<link rel="stylesheet" href="slick/slick.css" type="text/css" />
+		<link rel="stylesheet" href="slick/slick-theme.css" type="text/css" />
+		<link rel="stylesheet" href="css/animate.css" type="text/css" />
+		<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/fonts/Oswald-Regula.otf" />
+
+		<link rel="stylesheet" type="text/css" href="/style-v=50.css" />
+
+
+</head>
+
+<body>
+
+<div class="container" >
+	<div class="row" >
+		 <div class="icono fadeInUp animated" style="margin-top: 3vw; margin-bottom: 3vw;">
+		      <img class="cositos" src="imgs/noticialogo.svg">
+		        
+		    </div> 
+		<div class="col-sm-8 col-md-9" >
+			<div class="blog">
+				{{# each data.posts.results}}
+				<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
+					<h2><a href="{{postUrl slug}}">{{{title}}}</a></h2>
+					</p>
+					
+					<p>{{{content.brief}}}</p>
+					{{#if content.extended}}<p class="read-more"><a href="{{postUrl slug}}">Read more...</a></p>{{/if}}
+				</div>
+				{{/each}}
+			</div>
+		</div>
+		{{>pagination}}	
+	</div>
+	
+</div>
+</body>

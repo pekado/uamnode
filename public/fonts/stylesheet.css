@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Flexo Demi';
+    src: url('Flexo-Demi.eot');
+    src: url('Flexo-Demi-.eot#iefix') format('embedded-opentype'),
+        url('Flexo-Demi.woff2') format('woff2'),
+        url('Flexo-Demi.woff') format('woff'),
+        url('Flexo-Demi.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flexo Light';
+    src: url('Flexo-Light.eot');
+    src: url('Flexo-Light-.eot#iefix') format('embedded-opentype'),
+        url('Flexo-Light.woff2') format('woff2'),
+        url('Flexo-Light.woff') format('woff'),
+        url('Flexo-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Flexo-Regular.eot');
+    src: url('Flexo-Regular-.eot#iefix') format('embedded-opentype'),
+        url('Flexo-Regular.woff2') format('woff2'),
+        url('Flexo-Regular.woff') format('woff'),
+        url('Flexo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
