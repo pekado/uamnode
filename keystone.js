@@ -19,7 +19,7 @@ keystone.init({
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': '.hbs',
-	//'cloudinary config': 'cloudinary://342494211221377:opYqIMc_6DxfXP0GoppzyL2YDvE@dxp9cbs58',
+	'cloudinary config': 'cloudinary://342494211221377:opYqIMc_6DxfXP0GoppzyL2YDvE@dxp9cbs58',
 
 	'custom engine': handlebars.create({
 		layoutsDir: 'templates/views/layouts',
